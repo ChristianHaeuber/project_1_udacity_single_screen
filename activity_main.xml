@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:contentDescription="@string/app_name"
+        android:id="@+id/image1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@drawable/udacity_brand"
+        android:layout_alignParentTop="true"/>
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/address"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:layout_above="@id/city_state"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:id="@+id/city_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/city_state"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/phone_num"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:layout_below="@id/city_state"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:contentDescription="@string/app_name"
+        android:id="@+id/image2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@drawable/android_classroom"
+        android:layout_alignParentBottom="true" />
+
+    </RelativeLayout>
